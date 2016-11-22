@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #ded5d5;
+  font-family: Arial;
+  color: #332c2c; }
+
+.formulario {
+  width: 300px;
+  max-height: 1000px;
+  margin: auto;
+  background: #fff;
+  margin-top: 10%; }
+
+.tiempo .numero_fecha {
+  font-size: 2em;
+  float: left;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+  margin-right: 0.1em; }
+.tiempo .fecha_1 {
+  display: inline-block;
+  text-align: left; }
+  .tiempo .fecha_1 .mes {
+    padding-top: 1em; }
+
+.name_dia {
+  float: right;
+  margin-top: -2em;
+  margin-right: 1em; }
+
+.Lista p {
+  padding: 1em;
+  width: 100%; }
+  .Lista p input[type="checkbox"] {
+    background: #fff;
+    border: 2px solid blue;
+    float: right; }
+
+.boton_principal {
+  display: inline-block;
+  height: 52.5px;
+  width: 100%;
+  position: relative; }
+  .boton_principal .boton {
+    padding: 1em;
+    margin: 0 34.5%;
+    background: #8ef195;
+    color: #fff;
+    border-style: none;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 2em; }
+
+/*# sourceMappingURL=estilos.css.map */
