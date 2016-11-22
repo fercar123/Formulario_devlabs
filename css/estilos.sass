@@ -3,6 +3,8 @@ $principal: #ded5d5
 $main_form: #fff
 $color_font: #332c2c
 $color_boton: #8ef195
+$color_checkbox: #fcfff4
+$color_border: #88c64b
 *
 	margin: 0
 	padding: 0
@@ -40,16 +42,37 @@ body
 	float: right
 	margin-top: -2em
 	margin-right: 1em 
-	.name_dia_1
+	
 
 .Lista
 	p
 		padding: 1em
 		width: 100%
-		input[type="checkbox"]
-			background: $main_form
-			border: 2px solid blue
+		label
+			font-size: 1em
+		label:before
+			content: ''
+			background: transparent
+			border: 2px solid $color_border
+			border-radius: 50%
+			display: inline-block
+			height: 18px
+			width: 18px
+			vertical-align: middle
+			text-align: center
 			float: right
+			
+			
+		input[type=checkbox]
+			display: none
+		input[type=checkbox]+ label
+			cursor: pointer
+		input[type=checkbox]:checked+ label:before
+			background: $color_border
+
+
+
+
             
 .boton_principal
 	

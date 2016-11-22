@@ -35,10 +35,25 @@ body {
 .Lista p {
   padding: 1em;
   width: 100%; }
-  .Lista p input[type="checkbox"] {
-    background: #fff;
-    border: 2px solid blue;
+  .Lista p label {
+    font-size: 1em; }
+  .Lista p label:before {
+    content: "";
+    background: transparent;
+    border: 2px solid #88c64b;
+    border-radius: 50%;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    vertical-align: middle;
+    text-align: center;
     float: right; }
+  .Lista p input[type=checkbox] {
+    display: none; }
+  .Lista p input[type=checkbox] + label {
+    cursor: pointer; }
+  .Lista p input[type=checkbox]:checked + label:before {
+    background: #88c64b; }
 
 .boton_principal {
   display: inline-block;
