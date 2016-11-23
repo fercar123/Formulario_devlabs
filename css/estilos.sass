@@ -1,8 +1,8 @@
-$font-family: Arial
-$principal: #ded5d5
+$font-family: 'Open Sans', sans-serif
+$principal: #f0efe9
 $main_form: #fff
-$color_font: #332c2c
-$color_boton: #8ef195
+$color_font: #616473
+$color_boton: #50e3a4
 $color_checkbox: #fcfff4
 $color_border: #88c64b
 *
@@ -16,7 +16,7 @@ body
 	color: $color_font
 .formulario
 	width: 300px
-	max-height: 1000px
+	height: 518.4px
 	margin: auto
 	background: $main_form
 	margin-top: 10%
@@ -24,51 +24,67 @@ body
 
 
 .tiempo
+	margin-bottom: 8px
 
 	.numero_fecha
-		font-size: 2em
+		font-size: 22px
 		float: left
-		margin-left: 0.5em
-		margin-top:  0.5em
-		margin-right: 0.1em
+		margin-left: 42px
+		margin-top:  40.8px
+		margin-right: 8px
   		 
 	.fecha_1
 		display: inline-block
 		text-align: left
+		font-size: 7.2px
+		margin-top: 40.8px
 		.mes
 			padding-top: 1em
 
-.name_dia
-	float: right
-	margin-top: -2em
-	margin-right: 1em 
+	.name_dia
+		font-size: 7.2px
+		float: right
+		.name_dia_1
+			margin-right: 40px
+			margin-top: 56px
+			  
 	
 
 .Lista
 	p
-		padding: 1em
+		padding-top: 33px 
 		width: 100%
+		padding-left: 46.4px
+		padding-right: 46.4px
 		label
-			font-size: 1em
+			font-size: 9.6px
 		label:before
 			content: ''
 			background: transparent
-			border: 2px solid $color_border
-			border-radius: 50%
+			//border: 2px solid $color_border
+			//border-radius: 50%
 			display: inline-block
 			height: 18px
 			width: 18px
 			vertical-align: middle
 			text-align: center
 			float: right
+			margin-top: 4px
+
+
 			
 			
 		input[type=checkbox]
 			display: none
 		input[type=checkbox]+ label
 			cursor: pointer
+		input[type=checkbox]:checked+ label
+			color: #c1c3cd
 		input[type=checkbox]:checked+ label:before
-			background: $color_border
+			content: url("check.png")
+
+			
+	
 
 
 
@@ -78,7 +94,7 @@ body
 	
 	
 	display: inline-block
-	height: 52.5px//35.66665px
+	//height: 52.5px//35.66665px
 	width: 100%
 	position: relative
 	
@@ -86,14 +102,14 @@ body
 
 
 	.boton
-		padding: 1em
+		//padding: 1em
 		margin: 0 34.5%
 		background: $color_boton
-		color: $main_form
+		color: #46be8b
 		border-style: none
 		border-radius: 50%
 		position: absolute
-		font-size: 2em
+		//font-size: 2em
 		
 	
 		

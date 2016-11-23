@@ -11,11 +11,11 @@
 		pMes=document.getElementById("mes")
 		pDia_semana=document.getElementById('name_dia_1');
 
-		var semana=['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'];
+		var semana=['DOMINGO','LUNES','MARTES','MIÉRCOLES','JUEVES','VIERNES','SÁBADO'];
 		pDia_semana.textContent= semana[dia_nombre];
 		pDia.textContent=dia;
 
-		var meses=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+		var meses=['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'];
 		pMes.textContent=meses[mes];
 		pYear.textContent=year;
 
