@@ -15,12 +15,11 @@ body
 	font-family: $font-family
 	color: $color_font
 .formulario
-	width: 300px
+	width: 400px
 	height: 518.4px
-	margin: auto
+	margin: 10px auto
 	background: $main_form
-	margin-top: 10%
-	margin-bottom: 40px
+	position: relative
 
 
 
@@ -28,7 +27,7 @@ body
 	margin-bottom: 8px
 
 	.numero_fecha
-		font-size: 22px
+		font-size: 40px
 		float: left
 		margin-left: 42px
 		margin-top:  40.8px
@@ -37,13 +36,14 @@ body
 	.fecha_1
 		display: inline-block
 		text-align: left
-		font-size: 7.2px
+		font-size: 12px
 		margin-top: 40.8px
 		.mes
 			padding-top: 1em
+			font-weight: bold
 
 	.name_dia
-		font-size: 7.2px
+		font-size: 16px
 		float: right
 		.name_dia_1
 			margin-right: 40px
@@ -58,7 +58,7 @@ body
 		padding-left: 46.4px
 		padding-right: 46.4px
 		label
-			font-size: 9.6px
+			font-size: 14px
 		label:before
 			content: ''
 			background: transparent
@@ -96,15 +96,16 @@ body
 
 	display: inline-block
 	//height: 52.5px//35.66665px
-	width: 100%
-	position: relative
+	position: absolute
+	left: calc(50% - 35px)
+	//bottom: -35px
 
 
 
 
 	.boton
 		//padding: 1em
-		margin: 0 34.5%
+		//margin: 0 34.5%
 		background: $color_boton
 		color: #46be8b
 		border-style: none
