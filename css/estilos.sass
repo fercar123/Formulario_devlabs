@@ -14,9 +14,20 @@ body
 	background: $principal
 	font-family: $font-family
 	color: $color_font
+.intro
+
+	input[type=text]
+		margin: 20px 40px
+		width: 320px
+		color: $color_font
+		.error
+			color: red
+			border: 5px solid #D32F2F
+
 .formulario
 	width: 400px
-	height: 518.4px
+	//height: 580px
+	max-height: 1000px 
 	margin: 10px auto
 	background: $main_form
 	position: relative
@@ -51,12 +62,14 @@ body
 
 
 
-.Lista
+.lista
 	p
 		padding-top: 33px
 		width: 100%
 		padding-left: 46.4px
 		padding-right: 46.4px
+		
+		
 		label
 			font-size: 14px
 		label:before
@@ -120,3 +133,11 @@ body
 	.boton:hover
 		box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4)
 		//font-size: 2em
+
+.elim
+	display: inline-block
+	font-size: 12px 
+	width: 100%
+	color: red
+	position: relative
+	padding-left: 50px

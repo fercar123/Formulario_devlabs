@@ -8,17 +8,25 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #616473; }
 
+.intro input[type=text] {
+  margin: 20px 40px;
+  width: 320px;
+  color: #616473; }
+  .intro input[type=text] .error {
+    color: red;
+    border: 5px solid #D32F2F; }
+
 .formulario {
-  width: 300px;
-  height: 518.4px;
-  margin: auto;
+  width: 400px;
+  max-height: 1000px;
+  margin: 10px auto;
   background: #fff;
-  margin-top: 10%; }
+  position: relative; }
 
 .tiempo {
   margin-bottom: 8px; }
   .tiempo .numero_fecha {
-    font-size: 22px;
+    font-size: 40px;
     float: left;
     margin-left: 42px;
     margin-top: 40.8px;
@@ -26,25 +34,26 @@ body {
   .tiempo .fecha_1 {
     display: inline-block;
     text-align: left;
-    font-size: 7.2px;
+    font-size: 12px;
     margin-top: 40.8px; }
     .tiempo .fecha_1 .mes {
-      padding-top: 1em; }
+      padding-top: 1em;
+      font-weight: bold; }
   .tiempo .name_dia {
-    font-size: 7.2px;
+    font-size: 16px;
     float: right; }
     .tiempo .name_dia .name_dia_1 {
       margin-right: 40px;
       margin-top: 56px; }
 
-.Lista p {
+.lista p {
   padding-top: 33px;
   width: 100%;
   padding-left: 46.4px;
   padding-right: 46.4px; }
-  .Lista p label {
-    font-size: 9.6px; }
-  .Lista p label:before {
+  .lista p label {
+    font-size: 14px; }
+  .lista p label:before {
     content: "";
     background: transparent;
     display: inline-block;
@@ -54,25 +63,40 @@ body {
     text-align: center;
     float: right;
     margin-top: 4px; }
-  .Lista p input[type=checkbox] {
+  .lista p input[type=checkbox] {
     display: none; }
-  .Lista p input[type=checkbox] + label {
+  .lista p input[type=checkbox] + label {
     cursor: pointer; }
-  .Lista p input[type=checkbox]:checked + label {
+  .lista p input[type=checkbox]:checked + label {
     color: #c1c3cd; }
-  .Lista p input[type=checkbox]:checked + label:before {
+  .lista p input[type=checkbox]:checked + label:before {
     content: url("check.png"); }
 
 .boton_principal {
   display: inline-block;
-  width: 100%;
-  position: relative; }
+  position: absolute;
+  left: calc(50% - 35px); }
   .boton_principal .boton {
-    margin: 0 34.5%;
     background: #50e3a4;
     color: #46be8b;
     border-style: none;
     border-radius: 50%;
-    position: absolute; }
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
+    transition: 0.5s all ease;
+    cursor: pointer; }
+  .boton_principal .boton:hover {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4); }
+
+.elim {
+  display: inline-block;
+  font-size: 12px;
+  width: 100%;
+  color: red;
+  position: relative;
+  padding-left: 50px; }
 
 /*# sourceMappingURL=estilos.css.map */

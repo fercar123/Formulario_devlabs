@@ -10,6 +10,9 @@
 <body>
 <div class="formulario">
  <form action="">
+ <div class="intro">
+     <input type="text" placeholder="Agrega Tarea" id="a_tarea">
+ </div>
  <header>
     <div class="tiempo">
     	<div class="numero_fecha">
@@ -28,17 +31,16 @@
     
     </header>
 
-    <div class="Lista">
+    <div class="lista" id="lista">
     
-        <p class="primer"> <input type="checkbox" id="check1"> <label for="check1">Comprar nuevo sueter</label></p>
-        <p class="segundo"> <input type="checkbox" id="check2"><label for="check2">Empezar fase de promoción</label></p>
-        <p class="segundo"> <input type="checkbox" id="check3"><label for="check3">Leer un articulo</label></p>
-        <p class="segundo"> <input type="checkbox" id="check4"><label for="check4">No intentar dormirse</label></p>
-        <p class="segundo"> <input type="checkbox" id="check5"><label for="check5">Mirar "Sherlock"</label></p>
-        <p class="segundo"> <input type="checkbox" id="check6"><label for="check6">Entrar QA para producto </label></p>
-        <p class="segundo"><input type="checkbox" id="check7"><label for="check7">Salir a trabajar</label></p>
-        
-    
+        <p> <input type="checkbox" class="check" id="check1"> <label for="check1">Comprar nuevo sueter</label></p>
+        <p> <input type="checkbox" class="check" id="check2"><label for="check2">Empezar fase de promoción</label></p>
+        <p> <input type="checkbox" id="check3"><label for="check3">Leer un articulo</label></p>
+        <p> <input type="checkbox" class="check" id="check4"><label for="check4">No intentar dormirse</label></p>
+        <p> <input type="checkbox" class="check" id="check5"><label for="check5">Mirar "Sherlock"</label></p>
+        <p> <input type="checkbox" class="check" id="check6"><label for="check6">Entrar QA para producto </label></p>
+        <p><input type="checkbox" class="check" id="check7"><label for="check7">Salir a trabajar</label></p>
+
     </div>
     <div class="boton_principal">
         <input type="button" class="boton" id="btn-a" value="+">
@@ -51,4 +53,5 @@
 	
 </body>
 <script src="javascript/reloj.js"></script> 
+<script src="javascript/principal.js"></script>
 </html>
